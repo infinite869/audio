@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8"> 
+	<script type="text/javascript"></script>
+		<title>Easha Pinnamaneni, Lab 10A</title>
+		<style>
+			@font-face { 
+				font-family: font1; 
+				src: url(ProstoOne-Regular.ttf); 
+			}
+			body {
+				font-family: font1;
+				
+			}
+			#videobg {
+				position: absolute; 
+				bottom: 0px; 
+				right: 0px; 
+				min-width: 100%;
+				min-height: 100%; 
+				width: auto; 
+				height: auto; 
+				z-index: -1000;
+				overflow: hidden; 
+			}
+			h3 {
+			font-size: 22px;
+			color: #ffffff;
+			width:300px;
+			height:510px;
+			padding:20px;
+			border-top: thick double #ff0000;
+			border-bottom: thick double #ff0000;
+			}
+			
+			footer {
+			
+			color:#ff0000;
+			text-align:center;
+			font-size: 18px;
+			margin-top: 100px;
+			background: #000000;
+			opacity:.7;
+			}
+			#buttons{
+				text-align:right;	
+				margin-right:100px;
+			}
+			button{
+				font-family: font1;
+				font-size: 15px;
+				color: #ffffff;
+				background:linear-gradient(to bottom right,#b30000, #cc0000 , #FF6666, #FF4040);
+				border-radius: 5px;
+				padding:8px;
+			}
+		</style>
+	</head>
+	<body >
+		<video id="videobg" preload="auto" autoplay="true" loop poster="Dogs.jpg">
+			<source src="animals.mp4" type="video/mp4">
+			<source src="animals.webm" type="video/webm">
+				Your browser does not support the video format.
+		</video>
+		<div>
+			<h3><i> Funny Animals Playing Dead - Compilation! </i> <br><br><br>
+				“When animals express their feelings they pour out like water from a spout. Animals' emotions are raw, unfiltered, and uncontrolled. Their joy is the purest and most contagious of joys and their grief the deepest and most devastating. Their passions bring us to our knees in delight and sorrow.”- Marc Bekoff
+			</h3>
+			
+		</div>
+		
+		<div id="buttons">
+			<button onclick="document.getElementById('videobg').play()">Play</button>
+			<button onclick="document.getElementById('videobg').pause()">Pause</button>
+			<button onclick="document.getElementById('videobg').volume+=0.1">+ Vol</button>
+			<button onclick="document.getElementById('videobg').volume-=0.1">- Vol</button>
+		</div>
+		<footer>
+			<span>Easha Pinnamaneni Course# IT614, Lab Assignment 10A <time datetime="2015-12-04">April 12, 2015</time></span>
+		</footer>
+	</body>
+</html>
+		
